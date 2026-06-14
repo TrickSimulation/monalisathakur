@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kairos: Contemplating Our Relationship with Time — Monalisa Thakur</title>
+  <meta name="description" content="NID thesis project — a tangible sun-arc timekeeping artefact exploring ambient, non-numerical approaches to time. Led to an extended experimental research engagement with Titan Company Ltd.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Monalisa Thakur</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="project-page-wrap">
+
+      <div class="project-header">
+        <a href="work.html" class="project-back">All Work</a>
+        <h1 class="project-title">Kairos: Contemplating Our Relationship with Time</h1>
+      </div>
+
+      <div class="proj-featured-image">
+        <img src="assets/images/kairos-1.jpg" alt="Kairos artefact">
+      </div>
+
+      <div class="project-meta">
+        <div class="meta-item">
+          <p class="meta-label">Context</p>
+          <p class="meta-value">NID Thesis Project</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Year</p>
+          <p class="meta-value">2022</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">My Role</p>
+          <p class="meta-value">Solo — Research, Design &amp; Build</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Type</p>
+          <p class="meta-value">Tangible Interaction · Speculative</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Output</p>
+          <p class="meta-value">Working Artefact → Titan Company Engagement</p>
+        </div>
+      </div>
+
+      <div class="project-body">
+
+        <div class="project-intro-row">
+          <div>
+            <p class="project-intro-text">
+              My NID thesis began with a question I couldn't stop thinking about: why does a
+              clock make you feel like you're running out of time? Kairos was the attempt to
+              answer it — a timekeeping artefact built around natural rhythms rather than
+              numerical precision. The thesis work later led to an extended experimental
+              research engagement with Titan Company Ltd, where the same questions were
+              explored across 20+ concepts and prototypes.
+            </p>
+          </div>
+        </div>
+
+        <!-- The research question -->
+        <div class="proj-section">
+          <p class="proj-section-label">The Research Question</p>
+          <p class="proj-text">
+            Most timekeeping devices work by making time feel scarce. They divide the day into
+            units that can be counted down, missed, or wasted. Kairos started from the opposite
+            premise: what would it mean to design a timekeeping device that made you feel like
+            you were part of time, rather than racing against it?
+          </p>
+          <p class="proj-text">
+            The research drew on linguistic analysis of how different cultures use temporal
+            metaphors — time as a resource, as a river, as a cycle — and on the history of
+            pre-industrial timekeeping, which was predominantly environmental: sundials, water
+            clocks, the position of stars. The design question became: could a contemporary
+            artefact recover that relationship?
+          </p>
+        </div>
+
+        <!-- Concept -->
+        <div class="proj-section">
+          <p class="proj-section-label">Concept</p>
+          <p class="proj-text">
+            Rather than displaying hours and minutes, Kairos depicts the arc of the sun across
+            the day — rising, reaching its apex, descending — as a continuous, physical movement.
+            The pace is slow enough to feel natural. The light warms and cools through the day.
+            You don't read the time so much as sense it.
+          </p>
+          <p class="proj-text">
+            The artefact deliberately sits between functional object and contemplative piece.
+            It tells time accurately — synchronised via NTP, driven by an ESP32 microcontroller —
+            but communicates it in a way that resists the anxiety conventional clocks produce.
+          </p>
+        </div>
+
+        <!-- Technical Implementation -->
+        <div class="proj-section">
+          <p class="proj-section-label">Build</p>
+          <p class="proj-text">
+            The sun's arc is driven by a servo mechanism calibrated to the actual sunrise and
+            sunset times for the user's location. An ESP32 microcontroller handles NTP
+            synchronisation, keeping the movement accurate without manual adjustment. Warm
+            LEDs shift colour temperature through the day — cooler in the morning, warmer
+            at midday, amber at dusk.
+          </p>
+          <div class="img-row cols-2" style="margin-top: 32px;">
+            <img src="assets/images/kairos-1.jpg" alt="Kairos artefact — front view">
+            <img src="assets/images/kairos-2.jpg" alt="Kairos artefact — detail">
+          </div>
+        </div>
+
+        <!-- What came next -->
+        <div class="proj-section" style="border-bottom: none;">
+          <p class="proj-section-label">What This Led To</p>
+          <p class="proj-text">
+            Kairos was one artefact built around one direction. The thesis opened up
+            a much larger question about the future of timekeeping — what other assumptions
+            about clocks and watches could be challenged, and in which directions.
+          </p>
+          <p class="proj-text">
+            Titan Company Ltd continued this experimental research with me over an extended
+            engagement, exploring the future of timekeeping devices across 20+ concepts and
+            prototypes. Kairos was the starting point for that conversation.
+            See <a href="project-rethinking-time.html" style="text-decoration:underline;text-underline-offset:3px;">Rethinking Time →</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&#169; 2025 Monalisa Thakur. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLU-based Textual Analysis &amp; Summarization — Monalisa Thakur</title>
+  <meta name="description" content="UX design for an Intelligent Process Automation platform leveraging natural language understanding for textual analysis and summarization. Client: Stride.io">
+  <link rel="canonical" href="https://www.monalisathakur.com/nlu-based-textual-analysis">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Monalisa Thakur</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="project-page-wrap">
+
+      <div class="project-header">
+        <a href="work.html" class="project-back">All Work</a>
+        <h1 class="project-title">NLU-based Textual Analysis &amp; Summarization Platform</h1>
+      </div>
+
+      <div class="proj-featured-image">
+        <img src="assets/images/nlu-hero.jpg" alt="NLU-based Textual Analysis Platform">
+      </div>
+
+      <div class="project-meta">
+        <div class="meta-item">
+          <p class="meta-label">Client</p>
+          <p class="meta-value">Stride.io</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Year</p>
+          <p class="meta-value">2023</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">My Role</p>
+          <p class="meta-value">Lead UX Designer</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Type</p>
+          <p class="meta-value">Interaction Design · Product</p>
+        </div>
+      </div>
+
+      <div class="project-body">
+
+        <div class="project-intro-row">
+          <div>
+            <p class="project-intro-text">
+              Stride.io's IPA platform uses NLP to automate text-heavy business workflows —
+              extracting entities, summarising documents, flagging sentiment. The technology
+              was ready. What it needed was an interface that made machine-generated analysis
+              feel legible to people who had never worked with NLP before.
+            </p>
+          </div>
+        </div>
+
+        <!-- The actual problem -->
+        <div class="proj-section">
+          <p class="proj-section-label">The Problem</p>
+          <p class="proj-text">
+            Business analysts — the platform's primary users — were the wrong audience for raw
+            NLP output. Confidence scores, entity tags, and sentiment vectors are meaningful
+            to an ML engineer. To someone working inside enterprise tools all day, they read
+            as noise, or worse, as errors.
+          </p>
+          <p class="proj-text">
+            The brief was to design interactive demos that would let Stride.io validate the
+            platform with early customers. But the underlying design challenge was harder than
+            that: how do you make a system that explains what it's doing without explaining how?
+            And how do you build trust with users who don't yet have a mental model for what
+            the product is?
+          </p>
+        </div>
+
+        <!-- Research -->
+        <div class="proj-section">
+          <p class="proj-section-label">What Research Surfaced</p>
+          <p class="proj-text">
+            Stakeholder interviews with the Stride.io team and conversations with prospective
+            users established three consistent tensions that shaped the design:
+          </p>
+          <div class="module-row" style="margin-top: 28px;">
+            <div class="module-card">
+              <h3 class="module-card-title">Trust before use</h3>
+              <p class="module-card-text">Users needed to verify the platform against documents they already knew before they would trust it on new ones. The product had to earn confidence before delivering value.</p>
+            </div>
+            <div class="module-card">
+              <h3 class="module-card-title">Explanation without jargon</h3>
+              <p class="module-card-text">Users wanted to understand what the platform was telling them — not how the model worked. Every piece of ML vocabulary in the interface was a potential exit point.</p>
+            </div>
+            <div class="module-card">
+              <h3 class="module-card-title">Variable input quality</h3>
+              <p class="module-card-text">Documents arriving into the platform were not clean. Some were partial, some poorly formatted, some domain-specific. The interface had to handle imperfect input gracefully rather than reject it.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Design Decisions -->
+        <div class="proj-section">
+          <p class="proj-section-label">Three Decisions That Shaped the Design</p>
+
+          <ol class="process-list">
+            <li class="process-item">
+              <span class="process-number">01</span>
+              <div>
+                <p class="process-content-title">Module-first architecture</p>
+                <p class="process-content-text">
+                  Rather than a single unified interface, the platform was built around
+                  discrete capabilities — Text Summarisation, Entity Extraction, Sentiment
+                  Analysis — each accessible independently. This addressed the trust problem
+                  directly: users could test one module against familiar documents before
+                  committing to a broader workflow. It also gave Stride.io flexibility
+                  in how they demoed the product to different buyer types.
+                </p>
+              </div>
+            </li>
+            <li class="process-item">
+              <span class="process-number">02</span>
+              <div>
+                <p class="process-content-title">Progressive disclosure of confidence</p>
+                <p class="process-content-text">
+                  NLP outputs carry confidence scores. Showing them by default was a mistake
+                  we caught early — mid-fi testing participants read low-confidence flags as
+                  platform errors rather than model uncertainty. The redesign buried precision
+                  scores inside expandable detail panels, surfacing only high-confidence
+                  outputs in the primary view. Users who wanted the detail could find it;
+                  users who didn't were never confused by it.
+                </p>
+              </div>
+            </li>
+            <li class="process-item">
+              <span class="process-number">03</span>
+              <div>
+                <p class="process-content-title">Input that sets expectations before processing</p>
+                <p class="process-content-text">
+                  Testing also revealed that users formed their judgement of the platform during
+                  input, not output. When they uploaded a messy document and got a clean summary,
+                  the gap felt like magic — and that created distrust, not delight. Adding inline
+                  feedback at the input stage (flagging incomplete fields, noting document quality)
+                  made the processing feel earned, not mysterious.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- What changed through testing -->
+        <div class="proj-section">
+          <p class="proj-section-label">What Changed Through Testing</p>
+          <p class="proj-text">
+            The first round of mid-fi testing surfaced a navigation problem that wasn't in the
+            original information architecture. Users working across multiple modules lost track
+            of which document they were analysing — switching between Summarisation and Entity
+            Extraction felt like starting over. A persistent document context panel, pinned
+            to the left of the interface, was added after this round. It wasn't in the sitemap.
+            It ended up being one of the most commented-on features in subsequent testing.
+          </p>
+
+          <div class="img-row cols-2" style="margin-top: 40px;">
+            <img src="assets/images/nlu-screen-1.png" alt="Platform screen — sitemap and IA">
+            <img src="assets/images/nlu-screen-2.png" alt="Platform screen — user flow">
+            <img src="assets/images/nlu-screen-3.png" alt="Platform screen — mid-fidelity prototype">
+            <img src="assets/images/nlu-screen-4.png" alt="Platform screen — hi-fidelity UI">
+          </div>
+        </div>
+
+        <!-- Platform Modules -->
+        <div class="proj-section">
+          <p class="proj-section-label">Platform Modules</p>
+          <div class="module-row">
+            <div class="module-card">
+              <img class="module-icon" src="assets/images/nlu-nda-1.png" alt="Text Summarisation">
+              <h3 class="module-card-title">Text Summarisation</h3>
+              <p class="module-card-text">Compresses long-form documents into structured bullet-point summaries, prioritising key claims over detail.</p>
+            </div>
+            <div class="module-card">
+              <img class="module-icon" src="assets/images/nlu-nda-2.png" alt="Entity Extraction">
+              <h3 class="module-card-title">Entity Extraction</h3>
+              <p class="module-card-text">Identifies and classifies named entities — people, organisations, locations, dates — across unstructured text.</p>
+            </div>
+            <div class="module-card">
+              <img class="module-icon" src="assets/images/nlu-nda-3.png" alt="Sentiment Analysis">
+              <h3 class="module-card-title">Sentiment Analysis</h3>
+              <p class="module-card-text">Scores text across a five-point scale from Very Negative to Very Positive, with entity-level breakdown.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outcome -->
+        <div class="proj-section">
+          <p class="proj-section-label">Outcome</p>
+          <p class="proj-text">
+            The demos were used by Stride.io to onboard early enterprise customers and support
+            the sales process. The UI kit and developer handoff documentation became the
+            foundation for the production build.
+          </p>
+          <div class="deliverables-grid">
+            <div class="deliverable-item">
+              <p class="deliverable-number">01</p>
+              <p class="deliverable-text">Sitemap &amp; IA</p>
+            </div>
+            <div class="deliverable-item">
+              <p class="deliverable-number">02</p>
+              <p class="deliverable-text">Task Flow &amp; User Flow</p>
+            </div>
+            <div class="deliverable-item">
+              <p class="deliverable-number">03</p>
+              <p class="deliverable-text">UI Requirement Document</p>
+            </div>
+            <div class="deliverable-item">
+              <p class="deliverable-number">04</p>
+              <p class="deliverable-text">Mid-Fidelity Prototype &amp; Testing</p>
+            </div>
+            <div class="deliverable-item">
+              <p class="deliverable-number">05</p>
+              <p class="deliverable-text">Hi-Fidelity Prototype</p>
+            </div>
+            <div class="deliverable-item">
+              <p class="deliverable-number">06</p>
+              <p class="deliverable-text">UI Kit &amp; Dev Handoff</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-section" style="text-align: center; border-bottom: none;">
+          <img class="project-end-gif" src="assets/images/project-end.gif" alt="">
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&#169; 2025 Monalisa Thakur. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
